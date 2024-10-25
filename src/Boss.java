@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Boss extends Admin {
+public final class Boss extends Admin {
     private int lucratori;
     private ArrayList<Admin> lista_lucatori =  new ArrayList<Admin>();
 
@@ -33,7 +33,7 @@ public class Boss extends Admin {
         lucratori = lista_lucatori.size();
     }
 
-    public void addLucratori(Admin admin) {
+    public final void addLucratori(Admin admin) {
         lista_lucatori.add(admin);
         lucratori++;
     }
@@ -74,15 +74,15 @@ public class Boss extends Admin {
         }
     }
 
-    public void concediereAdmin(Admin admin) {
+    public static void concediereAdmin(Admin admin, Boss boss) {
         float iq = admin.getIq();
         float salariu = admin.getSalariu();
         float lene = admin.getLene();
 
-        if (lista_lucatori.contains(admin)) {
+        if (boss.lista_lucatori.contains(admin)) {
             if (iq * lene >=100) {
-                lista_lucatori.remove(admin);
-                lucratori--;
+                boss.lista_lucatori.remove(admin);
+                boss.lucratori--;
                 System.out.println("Adminul a fost concediat !");
             }
             else {

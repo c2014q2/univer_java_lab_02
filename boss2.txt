@@ -1,5 +1,5 @@
 Statut Social: Boss
 Lucratori: 3
-Admin -> 170.52434 IQ
-Admin -> 117.477776 IQ
-Admin -> 64.43121 IQ
+Admin -> 124.553825 IQ
+Admin -> 174.78622 IQ
+Admin -> 225.01862 IQ

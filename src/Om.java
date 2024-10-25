@@ -33,13 +33,7 @@ public abstract class Om {
         this.is_man = is_man;
     }
 
-    public void printDetails(){
-        System.out.println("Height: " + height+" cm");
-        System.out.println("Weight: " + weight+" kg");
-        System.out.println("Eyes color: " + eyes_color);
-        System.out.println("Is man: " + is_man);
-
-    }
+    public abstract void printDetails();
 
     //public abstract void saveObjectToFile(String nameFile);
 

@@ -18,7 +18,7 @@ public class Main {
         Om[] planctons = new Om[]{user0, user1, user2, admin0, admin1, admin2, boss0, boss1};
 
         for(Om om : planctons){
-          //  om.printDetails();
+            om.printDetails();
         }
 
         System.out.println(user0.getDrepturi_list());  //drepturile userului 0
@@ -36,7 +36,7 @@ public class Main {
         boss0.recalculareSalariuForAdmin(admin0);  //acum putem folosi aceasta metoda catre admin0
 
 
-        boss0.concediereAdmin(admin0);  //bossul vrea sa il concedieze pe admin0! (daca adminul este lazy va fi concediat!)
+        Boss.concediereAdmin(admin0, boss0);  //bossul vrea sa il concedieze pe admin0! (daca adminul este lazy va fi concediat!)
 
         admin2 = admin0.combineAdmins(admin1);   //admin2 devine rezulatul combinarii a amin0 si admin1 ;)
 

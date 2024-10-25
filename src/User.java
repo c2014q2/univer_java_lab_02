@@ -47,7 +47,10 @@ public class User extends Om implements FileSave {
 
     @Override
     public void printDetails(){
-        super.printDetails();
+        System.out.println("Height: " + height+" cm");
+        System.out.println("Weight: " + weight+" kg");
+        System.out.println("Eyes color: " + eyes_color);
+        System.out.println("Is man: " + is_man);
         System.out.println("Statut Social: " + drepturi[statut_social]);
         System.out.println("Drepturile:");
         for(String detaliu:drepturi_list){
